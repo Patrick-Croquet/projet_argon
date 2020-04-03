@@ -1,6 +1,6 @@
 <template>
     <header class="header-global">
-        <base-nav class="navbar-main" transparent type="" effect="light" expand>
+        <base-nav class="navbar-main" transparent type="default" effect="dark" expand>
             <router-link slot="brand" class="navbar-brand mr-lg-5" to="/">
                 <img src="img/brand/white.png">
             </router-link>
@@ -57,8 +57,8 @@
                     <div class="dropdown-menu">
                         <router-link to="/landing" class="dropdown-item">Landing</router-link>
                         <router-link to="/profile" class="dropdown-item">Profile</router-link>
-                        <router-link to="/login" class="dropdown-item">Login</router-link>
-                        <router-link to="/register" class="dropdown-item">Register</router-link>
+                        <!-- <router-link to="/login" class="dropdown-item">Login</router-link> -->
+                        <!-- <router-link to="/register" class="dropdown-item">Register</router-link> -->
                     </div>
                 </li>
             </ul>
@@ -92,13 +92,15 @@
                     </a>
                 </li>
                 <li class="nav-item d-none d-lg-block ml-lg-4">
-                    <a href="https://www.creative-tim.com/product/vue-argon-design-system" target="_blank"
-                       class="btn btn-neutral btn-icon">
+                    <!-- <a href="https://www.creative-tim.com/product/vue-argon-design-system" target="_blank"
+                       class="btn btn-neutral btn-icon"> -->
+                    <router-link to="/login" class="btn btn-neutral btn-icon">  
                 <span class="btn-inner--icon">
-                  <i class="fa fa-cloud-download mr-2"></i>
+                  <i class="fa fa fa-user-circle mr-2"></i>
                 </span>
-                        <span class="nav-link-inner--text">Download</span>
-                    </a>
+                        <span class="nav-link-inner--text">Connect</span>
+                    <!-- </a> -->
+                    </router-link> 
                 </li>
             </ul>
         </base-nav>
